@@ -1,5 +1,5 @@
 
-A server app (back-end app) being an API that may serve for management of a small coffee shop. You can interact with API endpoints using `Postman` (3rd party app). The project is the part of the Coders Lab course.
+A server app (back-end app) being an API that may serve for management of a small coffee shop. You can interact with API endpoints using `Postman`.
 
 The figure below shows an example of the interaction to find products with applied query params. All available interactions are listed in the 'Endpoints' section.
 
@@ -9,13 +9,13 @@ The figure below shows an example of the interaction to find products with appli
   * http://localhost:3000/main/1/orders
   * http://localhost:3000/main/1/products
   * http://localhost:3000/main/1/staff
-* If an endpoint handles query params (see subsections below), it is not necessary to provide all of them.
+  * 
 * To add a new order, product or employee to the database, a request body need to satisfy the respective Mongoose model (see the 'Mongoose models' section).
 
 ## Orders endpoints
 * **GET**
   * **/all** - find all orders
-  * **/all?dateFrom&dateTo&page** - find orders with applied query params, *e.g.*:
+  * **/all?dateFrom&dateTo&page** - find orders with applied query params, Example.
     * dateFrom=2020-11-13
     * dateTo=2020-11-14
     * page=1
@@ -30,7 +30,7 @@ The figure below shows an example of the interaction to find products with appli
 ## Products endpoints
 * **GET**
   * **/all** - find all products
-  * **/all?amountAtLeast&brand&categories&page** - find products with applied query params, *e.g.*:
+  * **/all?amountAtLeast&brand&categories&page** - find products with applied query params, example:
     * amountAtLeast=10
     * brand=Bialetti
     * categories=coffee,food
@@ -110,9 +110,6 @@ The figure below shows an example of the interaction to find products with appli
 * **position** - `[String]` - available options: `waiter`, `waitress`, `barista`, `cleaning`, `temp`
 * **monthlySalary** - `Number` - greater or equal to `2000`
 
-# Information
-* An interaction response is shown both by the client and the console (see the above figure).
-* The project has numerous commits because it previously was built using `Joi` validation according to the workshop guidelines. Then, the `Joi` was replaced with `Mongoose`.
 ## Handled errors
 * **MISSING DATA** - when request body was not sent.
 * **VALIDATION ERROR** - when request body did not satisfy `Mongoose` validation.
@@ -127,9 +124,7 @@ The figure below shows an example of the interaction to find products with appli
 * Express
 * JS (ES6)
 
-# Download and Install
-* Use the link from the 'Code' button to download the project.
-* In the project directory, type:
+# Project setup : 
 ```
 npm i
 ```
