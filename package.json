@@ -1,0 +1,28 @@
+{
+  "name": "coffee_shop_management_system",
+  "version": "1.0.0",
+  "description": "Coffee shop management system",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node --experimental-modules --es-module-specifier-resolution=node --no-warnings src/app.js"
+  },
+  "keywords": [
+    "mongodb",
+    "mongoose",
+    "coffee shop"
+  ],
+  "author": "",
+  "license": "UNLICENSED",
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.8",
+    "mongoose": "^5.9.17",
+    "morgan": "^1.10.0"
+  }
+}
